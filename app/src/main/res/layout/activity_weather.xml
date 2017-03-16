@@ -20,13 +20,12 @@
         android:id="@+id/temperatureTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/temperature"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_below="@+id/weatherIconImageView"
         android:layout_centerHorizontal="true"
+        android:text="@string/temperature"
 
-         />
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
 
     <TextView
         android:id="@+id/conditionTextView"

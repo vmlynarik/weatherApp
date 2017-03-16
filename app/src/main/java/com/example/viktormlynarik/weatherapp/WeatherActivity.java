@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.example.viktormlynarik.weatherapp.data.Channel;
 import com.example.viktormlynarik.weatherapp.service.WeatherServiceCallback;
 import com.example.viktormlynarik.weatherapp.service.YahooWeatherService;
+import com.testfairy.TestFairy;
 
 public class WeatherActivity extends AppCompatActivity implements WeatherServiceCallback {
 
@@ -23,6 +24,8 @@ public class WeatherActivity extends AppCompatActivity implements WeatherService
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //add token between <>
+        TestFairy.begin(this, "<>");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
